@@ -12,9 +12,9 @@ Uses the TWIlib ( http://www.chrisherring.net/all/tutorial-interrupt-driven-twi-
 Define the I2C slave address and the number of channels used in the header file.
 
 PCA9635_init 
-	Initializes the I2C bus the global interrupt registers SEI and send the initialization data to the chip.
-	Inputs 	- I2C slave address of chip
-			- Sleep register (bool), puts chip in sleep mode 
+...Initializes the I2C bus the global interrupt registers SEI and send the initialization data to the chip.
+...Inputs 	- I2C slave address of chip
+......- Sleep register (bool), puts chip in sleep mode 
 			- Allcall register (bool), responds to calls for all other PCA9635 on the bus
 			- Dmblk register (bool), selects either dimming or blinking function
 			- Invrt register (bool), inverts output | used with external drivers
